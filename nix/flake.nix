@@ -19,8 +19,8 @@
       supportedCompilers = [
         "ghc8107"
         "ghc902"
-        "ghc922"
-        "ghc948"
+        "ghc925"
+        # "ghc948"
       ];
 
       # Function to generate a set based on supported systems:
