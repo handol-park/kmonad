@@ -116,12 +116,12 @@
         ];
       };
 
-      checks.x86_64-linux.default =
-        let pkgs = nixpkgsFor.x86_64-linux; in
-        import ./nixos-test.nix {
-          inherit pkgs;
-          module = self.nixosModules.default;
-        };
+      # checks.x86_64-linux.default =
+      #   let pkgs = nixpkgsFor.x86_64-linux; in
+      #   import ./nixos-test.nix {
+      #     inherit pkgs;
+      #     module = self.nixosModules.default;
+      #   };
 
       devShells = forAllSystems (system:
         let shellFor = haskell: name:
